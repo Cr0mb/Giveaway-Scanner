@@ -90,7 +90,7 @@ Laptop, Smartphone, Microphone, Electric Scooter, Eyewear
 
 ## Contributing
 
-Feel free to fork the repo and open pull requests to improve filtering options, support more sites, or enhance the UI.
+Feel free open pull requests or issues for support.
 
 
 
