@@ -31,9 +31,6 @@ SENDER_EMAIL=your_email@gmail.com
 SENDER_PASSWORD=your_email_password
 RECEIVER_EMAIL=recipient_email@gmail.com
 ```
-```
-
-```
 ---
 
 
