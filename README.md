@@ -1,96 +1,90 @@
 <img src="https://github.com/user-attachments/assets/f0c9bba0-53ca-46fd-80f2-541d464b00ab" width="300" />
 
 
----
-
 # Giveaway Scanner
 
-
-
-**Giveaway Scanner** is a simple Python script that scrapes [GiveawayBase](https://giveawaybase.com) for active giveaways and filters them based on your input keywords. It helps you quickly find giveaways related to popular tech and gaming items like GPUs, gaming PCs, consoles, peripherals, and more.
+Giveaway Scanner is a Python command-line tool designed to scrape and display active giveaways from GiveawayBase.com. It supports keyword filtering, pagination, and provides a clean, colorful terminal interface for easy browsing of giveaways.
 
 ---
 
 ## Features
 
-* Scrapes all active giveaways from GiveawayBase.
-* Filter giveaways by your own keywords or select from 20 popular tech/gaming-related keywords.
-* Option to view all giveaways without filtering.
-* Minimum results per page filter to fine-tune output.
-* Clean console output with colors and ASCII art for a friendly user experience.
+* Scrapes active giveaways from multiple pages on GiveawayBase.
+* Supports filtering giveaways by custom keywords or a curated list of popular keywords.
+* Pagination support for browsing results in manageable chunks.
+* Minimum results per page threshold to filter out less relevant pages.
+* User-friendly terminal interface with clear controls.
+* Color-coded output for improved readability.
 
 ---
 
 ## Installation
 
-1. Clone the repository:
+1. Clone this repository or download the script file.
 
-   ```bash
-   git clone https://github.com/Cr0mb/Giveaway-Scanner.git
-   cd Giveaway-Scanner
-   ```
+2. Ensure you have Python 3.6 or newer installed.
 
-2. Install dependencies (recommended in a virtual environment):
+3. Install the required dependencies using pip:
 
-   ```bash
-   pip install requests beautifulsoup4 pyfiglet colorama
-   ```
-
-   **Dependencies:**
-
-   * `requests`
-   * `beautifulsoup4`
-   * `pyfiglet`
-   * `colorama`
-
-3. Run the script:
-
-   ```bash
-   python give.py
-   ```
+```bash
+pip install requests beautifulsoup4 tqdm pyfiglet colorama
+```
 
 ---
 
 ## Usage
 
-Run the script and follow the prompts to:
+Run the script in your terminal:
 
-* Choose keyword filtering mode.
-* Enter or select keywords.
-* Set minimum results per page.
-* View matching giveaways directly in your terminal.
-
----
-
-## Keyword Filters
-
-You can either:
-
-* Enter custom keywords separated by commas, e.g. `GPU, PS5, headset`.
-* Select from a predefined list of popular keywords related to tech and gaming:
-
-```
-Gaming PC, Steam Deck, RTX, Razer, Logitech, Headset, Keyboard, Mouse,
-Monitor, GPU, PS5, Xbox, Gift Card, Amazon, Meta Quest,
-Laptop, Smartphone, Microphone, Electric Scooter, Eyewear
+```bash
+python giveaway_scanner.py
 ```
 
-* Or opt to see **all giveaways** without filtering.
+The program will prompt you to choose a filtering mode:
+
+1. Enter your own keyword(s) — input comma-separated terms to filter giveaways.
+2. Select from a predefined list of 20 popular keywords.
+3. Show all giveaways without any filtering.
+
+Next, specify the minimum number of results required per page to include giveaways from that page.
+
+The scanner then retrieves and displays giveaways matching your criteria, presenting them in pages of 10 entries each. Use the following controls:
+
+* **Enter**: Next page
+* **b**: Previous page
+* **q**: Quit the program
 
 ---
 
 ## How It Works
 
-* The script scrapes paginated active giveaway listings from GiveawayBase.
-* It parses giveaway titles and URLs using BeautifulSoup.
-* Filters giveaways by keywords if provided.
-* Displays results in a colorful, readable format with numbering and direct links.
+* The script requests pages from GiveawayBase's active giveaways section.
+* It parses giveaway titles, links, and dates using BeautifulSoup.
+* Filters giveaways based on the selected keywords.
+* Continues fetching pages until no more results are available or an error occurs.
+* Displays giveaways page by page with simple navigation controls.
 
 ---
 
-## Contributing
+## Dependencies
 
-Feel free open pull requests or issues for support.
+* [requests](https://pypi.org/project/requests/) – for HTTP requests
+* [beautifulsoup4](https://pypi.org/project/beautifulsoup4/) – for parsing HTML
+* [tqdm](https://pypi.org/project/tqdm/) – for progress bars
+* [pyfiglet](https://pypi.org/project/pyfiglet/) – for ASCII art title
+* [colorama](https://pypi.org/project/colorama/) – for colored terminal output
 
+---
+
+## Notes
+
+* The script respects server load by adding small delays between requests.
+* If network issues or invalid pages are encountered, the scan stops gracefully.
+* Keyword filtering is case-insensitive.
+* Pagination controls help navigate large result sets efficiently.
+
+---
+# Contributing
+Contributions are welcome! If you'd like to suggest improvements, report bugs, or add new features, please do so. Forks are not welcome.
 
 
