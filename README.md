@@ -1,4 +1,4 @@
-<img src="https://github.com/user-attachments/assets/f0c9bba0-53ca-46fd-80f2-541d464b00ab" width="300" />
+<img src="https://github.com/user-attachments/assets/c309dfe5-17e7-4a65-a266-b8d85939f877" width="300" />
 
 
 # Giveaway Scanner
