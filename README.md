@@ -37,7 +37,7 @@ pip install requests beautifulsoup4 tqdm pyfiglet colorama
 Run the script in your terminal:
 
 ```bash
-python giveaway_scanner.py
+python give.py
 ```
 
 The program will prompt you to choose a filtering mode:
