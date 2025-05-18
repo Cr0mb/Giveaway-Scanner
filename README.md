@@ -3,7 +3,7 @@
 
 # Giveaway Scanner
 
-Giveaway Scanner is a Python command-line tool designed to scrape and display active giveaways from GiveawayBase.com. It supports keyword filtering, pagination, and provides a clean, colorful terminal interface for easy browsing of giveaways.
+Giveaway Scanner is a Python command-line tool designed to scrape and display active giveaways from [GiveawayBase.com](https://giveawaybase.com/). It supports keyword filtering, pagination, and provides a clean, colorful terminal interface for easy browsing of giveaways.
 
 ---
 
