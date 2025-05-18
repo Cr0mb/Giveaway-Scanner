@@ -1,6 +1,5 @@
 <img src="https://github.com/user-attachments/assets/c309dfe5-17e7-4a65-a266-b8d85939f877" width="300" />
 
-
 # Giveaway Scanner
 
 Giveaway Scanner is a Python command-line tool designed to scrape and display active giveaways from [GiveawayBase.com](https://giveawaybase.com/). It supports keyword filtering, pagination, and provides a clean, colorful terminal interface for easy browsing of giveaways.
@@ -17,6 +16,26 @@ Giveaway Scanner is a Python command-line tool designed to scrape and display ac
 * Color-coded output for improved readability.
 
 ---
+## Update
+```
+
+1. give.py - not updated, works as intended
+2. give-send.py - works 24/7 and emails you for any new give aways found - saving those found to .json file
+```
+
+For give-send.py, make sure you include a .env file ``nano .env`` or create .env file if on windows
+
+.env should look like this:
+```
+SENDER_EMAIL=your_email@gmail.com
+SENDER_PASSWORD=your_email_password
+RECEIVER_EMAIL=recipient_email@gmail.com
+```
+```
+
+```
+---
+
 
 ## Installation
 
